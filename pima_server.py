@@ -110,15 +110,22 @@ class AlarmServer(threading.Thread):
           except pima.Error as e:
             logging.debug('Failed to get outputs status: %r', e)
             outputs = None
+            logging.debug('OREN1')
+          logging.debug('OREN2')
           self._set_status(status, outputs)
+          logging.debug('OREN3')
         time.sleep(1)
       except:
+        logging.debug('OREN4')
         logging.exception('Exception raised by Alarm.')
         try:
+          logging.debug('OREN5')
           with self._alarm_lock:
             logging.info('Trying to create the Alarm anew.')
             self._create_alarm()
+            logging.debug('OREN6')
         except pima.Error:
+          logging.debug('OREN7')
           logging.exception('Failed to recreate Alarm object. Exit for a clean restart.')
           _thread.interrupt_main()
 
