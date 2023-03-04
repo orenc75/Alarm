@@ -1,4 +1,4 @@
-# Home Assistant Add-on: PIMA Alarms
+# Home Assistant Add-on: PIMA Alarms - Test
 
 ## Prerequisites
 
