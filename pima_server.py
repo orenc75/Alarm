@@ -476,6 +476,8 @@ if __name__ == '__main__':
   logger = logging.getLogger()
   logger.setLevel(_parsed_args.log_level)
   logger.addHandler(logging_handler)
+  
+  logging.info(OOREN_TEST 222.')
 
   _pima_server = AlarmServer()  # type: AlarmServer
   _pima_server.start()
