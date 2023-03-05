@@ -9,7 +9,7 @@ if [ -z "$2" ]; then
   NEW_VERSION_MSG=v$1
 else
   NEW_VERSION_MSG=$2
-fi
+fi 
 
 git tag -a $NEW_VERSION -m "$NEW_VERSION_MSG"
 auto-changelog
