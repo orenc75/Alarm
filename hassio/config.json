@@ -4,7 +4,7 @@
   "slug": "pima",
   "description": "Interface for negotiation with PIMA Hunter Pro alarms.",
   "url": "https://github.com/orenc75/Alarm",
-  "image": "orenc75/pima2",
+  "image": "orenc75/Alarm",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
