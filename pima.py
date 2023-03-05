@@ -178,6 +178,7 @@ class Alarm(object):
     try:
       response = self._read_message()
     except GarbageInputError as ex:
+      logging.info('OREN_TEST')
       logging.info('Exception: %r.', ex)
       # Clear up a messy channel (sometime happens on startup).
       d = b'\xf3'
